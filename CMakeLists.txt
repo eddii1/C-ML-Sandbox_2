@@ -6,8 +6,10 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(MLSANDBOX main.cpp
         Interfata.cpp
         Interfata.h
-        DatasetInitiator.cpp
-        DatasetInitiator.h
         Sample.cpp
         Sample.h
+        Dataset.cpp
+        Dataset.h
+        DatasetLoader.cpp
+        DatasetLoader.h
 )
