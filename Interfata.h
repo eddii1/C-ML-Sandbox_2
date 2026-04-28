@@ -2,7 +2,7 @@
 // Created by Tudoran Eduard on 26.04.2026.
 //
 #include "Sample.h"
-#include "DatasetInitiator.h"
+#include "Dataset.h"
 #ifndef MLSANDBOX_INTERFATA_H
 #define MLSANDBOX_INTERFATA_H
 

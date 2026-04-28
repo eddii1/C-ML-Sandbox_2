@@ -6,8 +6,11 @@
 #define MLSANDBOX_DATASET_H
 #include <vector>
 #include "Sample.h"
+#include "DatasetLoader.h"
 
 class Dataset {
+    friend class DatasetLoader;
+protected:
     Sample train, test;
 };
 

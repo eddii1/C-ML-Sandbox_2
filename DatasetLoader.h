@@ -10,7 +10,8 @@
 class DatasetLoader {
 
 public:
-    Dataset load(std::fstream nume_fisier);
+    Dataset load(std::string nume_fisier);
+    Sample parseCSV(std::string nume_fisier);
 };
 
 
