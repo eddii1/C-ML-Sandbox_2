@@ -10,7 +10,7 @@
 
 class Interfata {
     Dataset data;
-    DatasetLoader loader;
+    DatasetLoader  loader;
 
     Sample& select_sample();
 public:

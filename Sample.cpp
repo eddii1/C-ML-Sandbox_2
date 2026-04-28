@@ -28,7 +28,7 @@ void Sample::matrix_set(const std::vector<std::vector<float>>& aux) {
 void Sample::randomly_init() {
     int size, rows;
 
-    std::cout << "DATI SIZE\n";
+    std::cout << "DATI SIZE (SAU NUMAR COLOANE):\n";
     std::cin >> size;
 
     std::cout << "DATI NUMAR RANDURI:\n";

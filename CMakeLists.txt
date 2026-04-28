@@ -12,4 +12,8 @@ add_executable(MLSANDBOX main.cpp
         Dataset.h
         DatasetLoader.cpp
         DatasetLoader.h
+        Model.cpp
+        Model.h
+        LinearRegression.cpp
+        LinearRegression.h
 )
