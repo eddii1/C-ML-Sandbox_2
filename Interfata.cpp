@@ -5,6 +5,24 @@
 #include "Interfata.h"
 #include <iostream>
 
+Sample& Interfata::select_sample() {
+    while (true) {
+        int decision;
+
+        std::cout << "ALEGETI SAMPLE-UL:\n";
+        std::cout << "1. TRAIN\n";
+        std::cout << "2. TEST\n";
+        std::cin >> decision;
+
+        if (decision == 1)
+            return data.get_train();
+        if (decision == 2)
+            return data.get_test();
+
+        std::cout << "OPTIUNE INVALIDA\n";
+    }
+}
+
 void Interfata::start() {
     while (true) {
         int decision;
@@ -20,35 +38,47 @@ void Interfata::start() {
 
         switch (decision) {
             case 1: {
-                if (!s.check())
+                Sample& current_sample = select_sample();
+
+                if (!current_sample.check())
                     std::cout << "SAMPLE NEINITIALIZAT/GOL\n";
                 else
-                    std::cout << s;
+                    std::cout << current_sample;
                 break;
             }
             case 2: {
-                std::cout << "TO BE IMPLEMENTED\n";
+                std::string folder_name;
+                std::cout << "DATI NUMELE FOLDERULUI:\n";
+                std::cin >> folder_name;
+                data = loader.load(folder_name);
                 break;
             }
             case 3: {
-                if (s.check()) {
+                Sample& current_sample = select_sample();
+
+                if (current_sample.check()) {
                     std::string yn;
-                    std::cout << "SAMPLE DEJA INITIALIZATI. RESET SAMPLE SI RAND?(y/n)";
+                    std::cout << "SAMPLE DEJA INITIALIZAT. RESET SAMPLE SI RAND?(y/n)";
                     std::cin >> yn;
                     if (yn == "y" || yn == "Y") {
-                        s.clear();
-                        s.randomly_init();
+                        current_sample.clear();
+                        current_sample.randomly_init();
                     }
 
-                }else
-                    s.randomly_init();
+                } else
+                    current_sample.randomly_init();
                 break;
             }
             case 4: {
-                s.clear();
+                Sample& current_sample = select_sample();
+                current_sample.clear();
                 break;
             }
             case 5: {
+                return;
+            }
+            default: {
+                std::cout << "OPTIUNE INVALIDA\n";
                 break;
             }
         }

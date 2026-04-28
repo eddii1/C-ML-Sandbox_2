@@ -2003,10 +2003,13 @@ CMakeFiles/MLSANDBOX.dir/main.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/main.
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdint.h \
-  /Users/eddii1/CLionProjects/MLSANDBOX/DatasetInitiator.h \
+  /Users/eddii1/CLionProjects/MLSANDBOX/Dataset.h \
+  /Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.h \
   /Users/eddii1/CLionProjects/MLSANDBOX/Interfata.h \
   /Users/eddii1/CLionProjects/MLSANDBOX/Sample.h
 
+
+/Users/eddii1/CLionProjects/MLSANDBOX/Dataset.h:
 
 /Users/eddii1/CLionProjects/MLSANDBOX/Interfata.h:
 
@@ -2611,6 +2614,8 @@ CMakeFiles/MLSANDBOX.dir/main.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/main.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/log2.h:
+
+/Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_valid.h:
 

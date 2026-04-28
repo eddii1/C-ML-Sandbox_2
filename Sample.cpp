@@ -13,12 +13,12 @@ bool Sample::check() {
     return v.size() != 0 && m.size() != 0;
 }
 
-void Sample::vector_set(std::vector<float> aux) {
+void Sample::vector_set(const std::vector<float>& aux) {
     for (auto it : aux)
         v.push_back(it);
 }
 
-void Sample::matrix_set(std::vector<std::vector<float>> aux) {
+void Sample::matrix_set(const std::vector<std::vector<float>>& aux) {
     m.resize(aux.size());
     for (int i = 0; i < aux.size(); i++)
         for (auto it : aux[i])
@@ -45,9 +45,7 @@ void Sample::randomly_init() {
 
 void Sample::clear()  {
     v.clear();
-
-    for (int i = 0; i < m.size(); i++)
-        m[i].clear();
+    m.clear();
 }
 
 std::ostream& operator<<(std::ostream &os, const Sample &aux) {

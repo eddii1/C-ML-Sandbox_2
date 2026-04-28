@@ -1,15 +1,18 @@
 //
 // Created by Tudoran Eduard on 26.04.2026.
 //
-#include "Sample.h"
 #include "Dataset.h"
+#include "DatasetLoader.h"
 #ifndef MLSANDBOX_INTERFATA_H
 #define MLSANDBOX_INTERFATA_H
 
 
 
 class Interfata {
-    Dataset d;
+    Dataset data;
+    DatasetLoader loader;
+
+    Sample& select_sample();
 public:
     void start();
 };

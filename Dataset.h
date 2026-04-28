@@ -4,14 +4,20 @@
 
 #ifndef MLSANDBOX_DATASET_H
 #define MLSANDBOX_DATASET_H
-#include <vector>
 #include "Sample.h"
 
 
 class Dataset {
     friend class DatasetLoader;
-protected:
+
+private:
     Sample train, test;
+
+public:
+    Sample& get_train();
+    const Sample& get_train() const;
+    Sample& get_test();
+    const Sample& get_test() const;
 };
 
 

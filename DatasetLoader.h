@@ -5,13 +5,13 @@
 #ifndef MLSANDBOX_DATASETLOADER_H
 #define MLSANDBOX_DATASETLOADER_H
 #include "Dataset.h"
-#include <fstream>
+#include <string>
 
 class DatasetLoader {
 
 public:
-    Dataset load(std::string nume_fisier);
-    Sample parseCSV(std::string nume_fisier);
+    Dataset load(const std::string& nume_fisier);
+    Sample parseCSV(const std::string& nume_fisier);
 };
 
 

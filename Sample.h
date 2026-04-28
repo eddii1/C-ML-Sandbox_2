@@ -1,6 +1,7 @@
 //
 // Created by Tudoran Eduard on 26.04.2026.
 //
+#include <iosfwd>
 #include <vector>
 #ifndef MLSANDBOX_SAMPLE_H
 #define MLSANDBOX_SAMPLE_H
@@ -12,10 +13,10 @@ class Sample {
 
 public:
     bool check();
-    void vector_set(std::vector<float> aux);
-    void matrix_set(std::vector<std::vector<float>> aux);
+    void vector_set(const std::vector<float>& aux);
+    void matrix_set(const std::vector<std::vector<float>>& aux);
     void randomly_init();
-    void clear() ;
+    void clear();
 
     friend std::ostream& operator<<(std::ostream &os, const Sample &aux);
 };
