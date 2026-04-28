@@ -100,24 +100,10 @@ CMakeFiles/MLSANDBOX.dir/Interfata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/Interfata.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/Interfata.cpp -o CMakeFiles/MLSANDBOX.dir/Interfata.cpp.s
 
-CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o: CMakeFiles/MLSANDBOX.dir/flags.make
-CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/DatasetInitiator.cpp
-CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o: CMakeFiles/MLSANDBOX.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o -MF CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o.d -o CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/DatasetInitiator.cpp
-
-CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/DatasetInitiator.cpp > CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.i
-
-CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/DatasetInitiator.cpp -o CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.s
-
 CMakeFiles/MLSANDBOX.dir/Sample.cpp.o: CMakeFiles/MLSANDBOX.dir/flags.make
 CMakeFiles/MLSANDBOX.dir/Sample.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/Sample.cpp
 CMakeFiles/MLSANDBOX.dir/Sample.cpp.o: CMakeFiles/MLSANDBOX.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MLSANDBOX.dir/Sample.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MLSANDBOX.dir/Sample.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLSANDBOX.dir/Sample.cpp.o -MF CMakeFiles/MLSANDBOX.dir/Sample.cpp.o.d -o CMakeFiles/MLSANDBOX.dir/Sample.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/Sample.cpp
 
 CMakeFiles/MLSANDBOX.dir/Sample.cpp.i: cmake_force
@@ -128,23 +114,53 @@ CMakeFiles/MLSANDBOX.dir/Sample.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/Sample.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/Sample.cpp -o CMakeFiles/MLSANDBOX.dir/Sample.cpp.s
 
+CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o: CMakeFiles/MLSANDBOX.dir/flags.make
+CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/Dataset.cpp
+CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o: CMakeFiles/MLSANDBOX.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o -MF CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o.d -o CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/Dataset.cpp
+
+CMakeFiles/MLSANDBOX.dir/Dataset.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLSANDBOX.dir/Dataset.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/Dataset.cpp > CMakeFiles/MLSANDBOX.dir/Dataset.cpp.i
+
+CMakeFiles/MLSANDBOX.dir/Dataset.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/Dataset.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/Dataset.cpp -o CMakeFiles/MLSANDBOX.dir/Dataset.cpp.s
+
+CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o: CMakeFiles/MLSANDBOX.dir/flags.make
+CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.cpp
+CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o: CMakeFiles/MLSANDBOX.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o -MF CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o.d -o CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.cpp
+
+CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.cpp > CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.i
+
+CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.cpp -o CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s
+
 # Object files for target MLSANDBOX
 MLSANDBOX_OBJECTS = \
 "CMakeFiles/MLSANDBOX.dir/main.cpp.o" \
 "CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o" \
-"CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o" \
-"CMakeFiles/MLSANDBOX.dir/Sample.cpp.o"
+"CMakeFiles/MLSANDBOX.dir/Sample.cpp.o" \
+"CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o" \
+"CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o"
 
 # External object files for target MLSANDBOX
 MLSANDBOX_EXTERNAL_OBJECTS =
 
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/main.cpp.o
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o
-MLSANDBOX: CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/Sample.cpp.o
+MLSANDBOX: CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o
+MLSANDBOX: CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/build.make
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MLSANDBOX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MLSANDBOX"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MLSANDBOX.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

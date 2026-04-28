@@ -980,7 +980,8 @@ CMakeFiles/MLSANDBOX.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Users/eddii1/CLionProjects/MLSANDBOX/Interfata.h \
   /Users/eddii1/CLionProjects/MLSANDBOX/Sample.h \
-  /Users/eddii1/CLionProjects/MLSANDBOX/DatasetInitiator.h \
+  /Users/eddii1/CLionProjects/MLSANDBOX/Dataset.h \
+  /Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \

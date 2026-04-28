@@ -16,18 +16,24 @@ Dataset DatasetLoader::load(std::string nume_fisier) {
 }
 
 Sample DatasetLoader::parseCSV(std::string nume_fisier) {
-    Sample train;
+    Sample sample;
     std::ifstream fin(nume_fisier);
     std::vector<std::vector<float>> aux;
 
     int x;
     int i = -1;
     while (!fin.eof()) {
+        aux.resize(i);
         i++;
         while (fin >> x) {
             aux[i].push_back(x);
         }
     }
+
+
+
+
+
 
 
 }

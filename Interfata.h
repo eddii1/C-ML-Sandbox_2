@@ -9,7 +9,7 @@
 
 
 class Interfata {
-    DatasetInitiator d1;
+    Dataset d;
 public:
     void start();
 };

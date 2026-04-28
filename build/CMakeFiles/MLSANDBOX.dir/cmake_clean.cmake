@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o"
-  "CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o.d"
+  "CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o"
+  "CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o.d"
+  "CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o"
+  "CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o.d"
   "CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o"
   "CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o.d"
   "CMakeFiles/MLSANDBOX.dir/Sample.cpp.o"

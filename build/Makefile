@@ -136,29 +136,53 @@ MLSANDBOX/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/build
 .PHONY : MLSANDBOX/fast
 
-DatasetInitiator.o: DatasetInitiator.cpp.o
-.PHONY : DatasetInitiator.o
+Dataset.o: Dataset.cpp.o
+.PHONY : Dataset.o
 
 # target to build an object file
-DatasetInitiator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.o
-.PHONY : DatasetInitiator.cpp.o
+Dataset.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o
+.PHONY : Dataset.cpp.o
 
-DatasetInitiator.i: DatasetInitiator.cpp.i
-.PHONY : DatasetInitiator.i
+Dataset.i: Dataset.cpp.i
+.PHONY : Dataset.i
 
 # target to preprocess a source file
-DatasetInitiator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.i
-.PHONY : DatasetInitiator.cpp.i
+Dataset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Dataset.cpp.i
+.PHONY : Dataset.cpp.i
 
-DatasetInitiator.s: DatasetInitiator.cpp.s
-.PHONY : DatasetInitiator.s
+Dataset.s: Dataset.cpp.s
+.PHONY : Dataset.s
 
 # target to generate assembly for a file
-DatasetInitiator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetInitiator.cpp.s
-.PHONY : DatasetInitiator.cpp.s
+Dataset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Dataset.cpp.s
+.PHONY : Dataset.cpp.s
+
+DatasetLoader.o: DatasetLoader.cpp.o
+.PHONY : DatasetLoader.o
+
+# target to build an object file
+DatasetLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o
+.PHONY : DatasetLoader.cpp.o
+
+DatasetLoader.i: DatasetLoader.cpp.i
+.PHONY : DatasetLoader.i
+
+# target to preprocess a source file
+DatasetLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.i
+.PHONY : DatasetLoader.cpp.i
+
+DatasetLoader.s: DatasetLoader.cpp.s
+.PHONY : DatasetLoader.s
+
+# target to generate assembly for a file
+DatasetLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s
+.PHONY : DatasetLoader.cpp.s
 
 Interfata.o: Interfata.cpp.o
 .PHONY : Interfata.o
@@ -242,9 +266,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MLSANDBOX"
-	@echo "... DatasetInitiator.o"
-	@echo "... DatasetInitiator.i"
-	@echo "... DatasetInitiator.s"
+	@echo "... Dataset.o"
+	@echo "... Dataset.i"
+	@echo "... Dataset.s"
+	@echo "... DatasetLoader.o"
+	@echo "... DatasetLoader.i"
+	@echo "... DatasetLoader.s"
 	@echo "... Interfata.o"
 	@echo "... Interfata.i"
 	@echo "... Interfata.s"
