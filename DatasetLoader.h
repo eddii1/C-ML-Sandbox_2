@@ -8,11 +8,9 @@
 #include <string>
 
 class DatasetLoader {
-
 public:
-    Dataset load(const std::string& nume_fisier);
-    Sample parseCSV(const std::string& nume_fisier);
+  Dataset load(const std::string &nume_fisier);
+  Sample parseCSV(const std::string &nume_fisier);
 };
 
-
-#endif //MLSANDBOX_DATASETLOADER_H
+#endif // MLSANDBOX_DATASETLOADER_H

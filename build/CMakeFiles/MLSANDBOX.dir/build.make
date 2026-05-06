@@ -142,13 +142,58 @@ CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.cpp -o CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s
 
+CMakeFiles/MLSANDBOX.dir/Model.cpp.o: CMakeFiles/MLSANDBOX.dir/flags.make
+CMakeFiles/MLSANDBOX.dir/Model.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/Model.cpp
+CMakeFiles/MLSANDBOX.dir/Model.cpp.o: CMakeFiles/MLSANDBOX.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MLSANDBOX.dir/Model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLSANDBOX.dir/Model.cpp.o -MF CMakeFiles/MLSANDBOX.dir/Model.cpp.o.d -o CMakeFiles/MLSANDBOX.dir/Model.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/Model.cpp
+
+CMakeFiles/MLSANDBOX.dir/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLSANDBOX.dir/Model.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/Model.cpp > CMakeFiles/MLSANDBOX.dir/Model.cpp.i
+
+CMakeFiles/MLSANDBOX.dir/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/Model.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/Model.cpp -o CMakeFiles/MLSANDBOX.dir/Model.cpp.s
+
+CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o: CMakeFiles/MLSANDBOX.dir/flags.make
+CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/LinearRegression.cpp
+CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o: CMakeFiles/MLSANDBOX.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o -MF CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o.d -o CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/LinearRegression.cpp
+
+CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/LinearRegression.cpp > CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.i
+
+CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/LinearRegression.cpp -o CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.s
+
+CMakeFiles/MLSANDBOX.dir/KNN.cpp.o: CMakeFiles/MLSANDBOX.dir/flags.make
+CMakeFiles/MLSANDBOX.dir/KNN.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/KNN.cpp
+CMakeFiles/MLSANDBOX.dir/KNN.cpp.o: CMakeFiles/MLSANDBOX.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MLSANDBOX.dir/KNN.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLSANDBOX.dir/KNN.cpp.o -MF CMakeFiles/MLSANDBOX.dir/KNN.cpp.o.d -o CMakeFiles/MLSANDBOX.dir/KNN.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/KNN.cpp
+
+CMakeFiles/MLSANDBOX.dir/KNN.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLSANDBOX.dir/KNN.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/KNN.cpp > CMakeFiles/MLSANDBOX.dir/KNN.cpp.i
+
+CMakeFiles/MLSANDBOX.dir/KNN.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLSANDBOX.dir/KNN.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/KNN.cpp -o CMakeFiles/MLSANDBOX.dir/KNN.cpp.s
+
 # Object files for target MLSANDBOX
 MLSANDBOX_OBJECTS = \
 "CMakeFiles/MLSANDBOX.dir/main.cpp.o" \
 "CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o" \
 "CMakeFiles/MLSANDBOX.dir/Sample.cpp.o" \
 "CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o" \
-"CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o"
+"CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o" \
+"CMakeFiles/MLSANDBOX.dir/Model.cpp.o" \
+"CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o" \
+"CMakeFiles/MLSANDBOX.dir/KNN.cpp.o"
 
 # External object files for target MLSANDBOX
 MLSANDBOX_EXTERNAL_OBJECTS =
@@ -158,9 +203,13 @@ MLSANDBOX: CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/Sample.cpp.o
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o
+MLSANDBOX: CMakeFiles/MLSANDBOX.dir/Model.cpp.o
+MLSANDBOX: CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o
+MLSANDBOX: CMakeFiles/MLSANDBOX.dir/KNN.cpp.o
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/build.make
+MLSANDBOX: /opt/homebrew/lib/libarmadillo.dylib
 MLSANDBOX: CMakeFiles/MLSANDBOX.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MLSANDBOX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable MLSANDBOX"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MLSANDBOX.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

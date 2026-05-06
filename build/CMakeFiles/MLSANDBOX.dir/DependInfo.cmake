@@ -11,6 +11,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/eddii1/CLionProjects/MLSANDBOX/Dataset.cpp" "CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o.d"
   "/Users/eddii1/CLionProjects/MLSANDBOX/DatasetLoader.cpp" "CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o.d"
   "/Users/eddii1/CLionProjects/MLSANDBOX/Interfata.cpp" "CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o.d"
+  "/Users/eddii1/CLionProjects/MLSANDBOX/KNN.cpp" "CMakeFiles/MLSANDBOX.dir/KNN.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/KNN.cpp.o.d"
+  "/Users/eddii1/CLionProjects/MLSANDBOX/LinearRegression.cpp" "CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o.d"
+  "/Users/eddii1/CLionProjects/MLSANDBOX/Model.cpp" "CMakeFiles/MLSANDBOX.dir/Model.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/Model.cpp.o.d"
   "/Users/eddii1/CLionProjects/MLSANDBOX/Sample.cpp" "CMakeFiles/MLSANDBOX.dir/Sample.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/Sample.cpp.o.d"
   "/Users/eddii1/CLionProjects/MLSANDBOX/main.cpp" "CMakeFiles/MLSANDBOX.dir/main.cpp.o" "gcc" "CMakeFiles/MLSANDBOX.dir/main.cpp.o.d"
   )

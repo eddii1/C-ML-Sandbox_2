@@ -6,19 +6,17 @@
 #define MLSANDBOX_DATASET_H
 #include "Sample.h"
 
-
 class Dataset {
-    friend class DatasetLoader;
+  friend class DatasetLoader;
 
 private:
-    Sample train, test;
+  Sample train, test;
 
 public:
-    Sample& get_train();
-    const Sample& get_train() const;
-    Sample& get_test();
-    const Sample& get_test() const;
+  Sample &get_train();
+  const Sample &get_train() const;
+  Sample &get_test();
+  const Sample &get_test() const;
 };
 
-
-#endif //MLSANDBOX_DATASET_H
+#endif // MLSANDBOX_DATASET_H

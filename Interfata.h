@@ -6,16 +6,14 @@
 #ifndef MLSANDBOX_INTERFATA_H
 #define MLSANDBOX_INTERFATA_H
 
-
-
 class Interfata {
-    Dataset data;
-    DatasetLoader  loader;
+  Dataset data;
+  DatasetLoader loader;
 
-    Sample& select_sample();
+  Sample &select_sample();
+
 public:
-    void start();
+  void start();
 };
 
-
-#endif //MLSANDBOX_INTERFATA_H
+#endif // MLSANDBOX_INTERFATA_H

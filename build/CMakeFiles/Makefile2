@@ -64,10 +64,12 @@ CMAKE_BINARY_DIR = /Users/eddii1/CLionProjects/MLSANDBOX/build
 
 # The main recursive "all" target.
 all: CMakeFiles/MLSANDBOX.dir/all
+all: CMakeFiles/linear_regression_demo.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/MLSANDBOX.dir/codegen
+codegen: CMakeFiles/linear_regression_demo.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/MLSANDBOX.dir/clean
+clean: CMakeFiles/linear_regression_demo.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,12 +88,12 @@ clean: CMakeFiles/MLSANDBOX.dir/clean
 CMakeFiles/MLSANDBOX.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target MLSANDBOX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target MLSANDBOX"
 .PHONY : CMakeFiles/MLSANDBOX.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MLSANDBOX.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MLSANDBOX.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles 0
 .PHONY : CMakeFiles/MLSANDBOX.dir/rule
@@ -102,13 +105,45 @@ MLSANDBOX: CMakeFiles/MLSANDBOX.dir/rule
 # codegen rule for target.
 CMakeFiles/MLSANDBOX.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target MLSANDBOX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target MLSANDBOX"
 .PHONY : CMakeFiles/MLSANDBOX.dir/codegen
 
 # clean rule for target.
 CMakeFiles/MLSANDBOX.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/clean
 .PHONY : CMakeFiles/MLSANDBOX.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/linear_regression_demo.dir
+
+# All Build rule for target.
+CMakeFiles/linear_regression_demo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18 "Built target linear_regression_demo"
+.PHONY : CMakeFiles/linear_regression_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/linear_regression_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/linear_regression_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles 0
+.PHONY : CMakeFiles/linear_regression_demo.dir/rule
+
+# Convenience name for target.
+linear_regression_demo: CMakeFiles/linear_regression_demo.dir/rule
+.PHONY : linear_regression_demo
+
+# codegen rule for target.
+CMakeFiles/linear_regression_demo.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18 "Finished codegen for target linear_regression_demo"
+.PHONY : CMakeFiles/linear_regression_demo.dir/codegen
+
+# clean rule for target.
+CMakeFiles/linear_regression_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/clean
+.PHONY : CMakeFiles/linear_regression_demo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -136,12 +136,26 @@ MLSANDBOX/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/build
 .PHONY : MLSANDBOX/fast
 
+#=============================================================================
+# Target rules for targets named linear_regression_demo
+
+# Build rule for target.
+linear_regression_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linear_regression_demo
+.PHONY : linear_regression_demo
+
+# fast build rule for target.
+linear_regression_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/build
+.PHONY : linear_regression_demo/fast
+
 Dataset.o: Dataset.cpp.o
 .PHONY : Dataset.o
 
 # target to build an object file
 Dataset.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Dataset.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Dataset.cpp.o
 .PHONY : Dataset.cpp.o
 
 Dataset.i: Dataset.cpp.i
@@ -150,6 +164,7 @@ Dataset.i: Dataset.cpp.i
 # target to preprocess a source file
 Dataset.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Dataset.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Dataset.cpp.i
 .PHONY : Dataset.cpp.i
 
 Dataset.s: Dataset.cpp.s
@@ -158,6 +173,7 @@ Dataset.s: Dataset.cpp.s
 # target to generate assembly for a file
 Dataset.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Dataset.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Dataset.cpp.s
 .PHONY : Dataset.cpp.s
 
 DatasetLoader.o: DatasetLoader.cpp.o
@@ -166,6 +182,7 @@ DatasetLoader.o: DatasetLoader.cpp.o
 # target to build an object file
 DatasetLoader.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/DatasetLoader.cpp.o
 .PHONY : DatasetLoader.cpp.o
 
 DatasetLoader.i: DatasetLoader.cpp.i
@@ -174,6 +191,7 @@ DatasetLoader.i: DatasetLoader.cpp.i
 # target to preprocess a source file
 DatasetLoader.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/DatasetLoader.cpp.i
 .PHONY : DatasetLoader.cpp.i
 
 DatasetLoader.s: DatasetLoader.cpp.s
@@ -182,6 +200,7 @@ DatasetLoader.s: DatasetLoader.cpp.s
 # target to generate assembly for a file
 DatasetLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/DatasetLoader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/DatasetLoader.cpp.s
 .PHONY : DatasetLoader.cpp.s
 
 Interfata.o: Interfata.cpp.o
@@ -190,6 +209,7 @@ Interfata.o: Interfata.cpp.o
 # target to build an object file
 Interfata.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Interfata.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Interfata.cpp.o
 .PHONY : Interfata.cpp.o
 
 Interfata.i: Interfata.cpp.i
@@ -198,6 +218,7 @@ Interfata.i: Interfata.cpp.i
 # target to preprocess a source file
 Interfata.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Interfata.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Interfata.cpp.i
 .PHONY : Interfata.cpp.i
 
 Interfata.s: Interfata.cpp.s
@@ -206,7 +227,89 @@ Interfata.s: Interfata.cpp.s
 # target to generate assembly for a file
 Interfata.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Interfata.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Interfata.cpp.s
 .PHONY : Interfata.cpp.s
+
+KNN.o: KNN.cpp.o
+.PHONY : KNN.o
+
+# target to build an object file
+KNN.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/KNN.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/KNN.cpp.o
+.PHONY : KNN.cpp.o
+
+KNN.i: KNN.cpp.i
+.PHONY : KNN.i
+
+# target to preprocess a source file
+KNN.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/KNN.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/KNN.cpp.i
+.PHONY : KNN.cpp.i
+
+KNN.s: KNN.cpp.s
+.PHONY : KNN.s
+
+# target to generate assembly for a file
+KNN.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/KNN.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/KNN.cpp.s
+.PHONY : KNN.cpp.s
+
+LinearRegression.o: LinearRegression.cpp.o
+.PHONY : LinearRegression.o
+
+# target to build an object file
+LinearRegression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/LinearRegression.cpp.o
+.PHONY : LinearRegression.cpp.o
+
+LinearRegression.i: LinearRegression.cpp.i
+.PHONY : LinearRegression.i
+
+# target to preprocess a source file
+LinearRegression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/LinearRegression.cpp.i
+.PHONY : LinearRegression.cpp.i
+
+LinearRegression.s: LinearRegression.cpp.s
+.PHONY : LinearRegression.s
+
+# target to generate assembly for a file
+LinearRegression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/LinearRegression.cpp.s
+.PHONY : LinearRegression.cpp.s
+
+Model.o: Model.cpp.o
+.PHONY : Model.o
+
+# target to build an object file
+Model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Model.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Model.cpp.o
+.PHONY : Model.cpp.o
+
+Model.i: Model.cpp.i
+.PHONY : Model.i
+
+# target to preprocess a source file
+Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Model.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Model.cpp.i
+.PHONY : Model.cpp.i
+
+Model.s: Model.cpp.s
+.PHONY : Model.s
+
+# target to generate assembly for a file
+Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Model.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Model.cpp.s
+.PHONY : Model.cpp.s
 
 Sample.o: Sample.cpp.o
 .PHONY : Sample.o
@@ -214,6 +317,7 @@ Sample.o: Sample.cpp.o
 # target to build an object file
 Sample.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Sample.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Sample.cpp.o
 .PHONY : Sample.cpp.o
 
 Sample.i: Sample.cpp.i
@@ -222,6 +326,7 @@ Sample.i: Sample.cpp.i
 # target to preprocess a source file
 Sample.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Sample.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Sample.cpp.i
 .PHONY : Sample.cpp.i
 
 Sample.s: Sample.cpp.s
@@ -230,7 +335,32 @@ Sample.s: Sample.cpp.s
 # target to generate assembly for a file
 Sample.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLSANDBOX.dir/build.make CMakeFiles/MLSANDBOX.dir/Sample.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/Sample.cpp.s
 .PHONY : Sample.cpp.s
+
+examples/linear_regression_demo.o: examples/linear_regression_demo.cpp.o
+.PHONY : examples/linear_regression_demo.o
+
+# target to build an object file
+examples/linear_regression_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/examples/linear_regression_demo.cpp.o
+.PHONY : examples/linear_regression_demo.cpp.o
+
+examples/linear_regression_demo.i: examples/linear_regression_demo.cpp.i
+.PHONY : examples/linear_regression_demo.i
+
+# target to preprocess a source file
+examples/linear_regression_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/examples/linear_regression_demo.cpp.i
+.PHONY : examples/linear_regression_demo.cpp.i
+
+examples/linear_regression_demo.s: examples/linear_regression_demo.cpp.s
+.PHONY : examples/linear_regression_demo.s
+
+# target to generate assembly for a file
+examples/linear_regression_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_regression_demo.dir/build.make CMakeFiles/linear_regression_demo.dir/examples/linear_regression_demo.cpp.s
+.PHONY : examples/linear_regression_demo.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -266,6 +396,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MLSANDBOX"
+	@echo "... linear_regression_demo"
 	@echo "... Dataset.o"
 	@echo "... Dataset.i"
 	@echo "... Dataset.s"
@@ -275,9 +406,21 @@ help:
 	@echo "... Interfata.o"
 	@echo "... Interfata.i"
 	@echo "... Interfata.s"
+	@echo "... KNN.o"
+	@echo "... KNN.i"
+	@echo "... KNN.s"
+	@echo "... LinearRegression.o"
+	@echo "... LinearRegression.i"
+	@echo "... LinearRegression.s"
+	@echo "... Model.o"
+	@echo "... Model.i"
+	@echo "... Model.s"
 	@echo "... Sample.o"
 	@echo "... Sample.i"
 	@echo "... Sample.s"
+	@echo "... examples/linear_regression_demo.o"
+	@echo "... examples/linear_regression_demo.i"
+	@echo "... examples/linear_regression_demo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
