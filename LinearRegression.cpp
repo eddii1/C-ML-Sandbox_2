@@ -3,6 +3,7 @@
 //
 
 #include "LinearRegression.h"
+#include "AppExceptions.h"
 #include <algorithm>
 #include <armadillo>
 #include <iomanip>
@@ -10,6 +11,10 @@
 
 LinearRegression::LinearRegression()
     : trained(false), last_mse(0.0), last_r2(0.0) {}
+
+std::shared_ptr<Model> LinearRegression::clone() const {
+    return std::make_shared<LinearRegression>(*this);
+}
 
 const arma::rowvec &LinearRegression::get_last_predictions() const {
     return last_predictions;
@@ -43,9 +48,8 @@ double LinearRegression::compute_r2(const arma::rowvec &actual,
 
 void LinearRegression::train_impl(const Sample &sample) {
     if (!sample.check()) {
-        std::cout << "Train sample-ul pentru LinearRegression este gol.\n";
         trained = false;
-        return;
+        throw ModelException("Train sample-ul pentru LinearRegression este gol.");
     }
 
     regression_model.Train(sample.predictors_as_mat(),
@@ -59,8 +63,7 @@ void LinearRegression::train_impl(const Sample &sample) {
 
 void LinearRegression::predict_impl(const Sample &sample) {
     if (!trained) {
-        std::cout << "LinearRegression nu este antrenat.\n";
-        return;
+        throw ModelException("LinearRegression nu este antrenat.");
     }
 
     last_predictions = predict_sample(sample);
@@ -79,12 +82,14 @@ void LinearRegression::predict_impl(const Sample &sample) {
 
 void LinearRegression::evaluate_impl(const Sample &sample) {
     if (!trained) {
-        std::cout << "LinearRegression nu este antrenat.\n";
-        return;
+        throw ModelException("LinearRegression nu este antrenat.");
     }
 
     const arma::rowvec actual = sample.responses_as_rowvec();
     last_predictions = predict_sample(sample);
+    if (actual.n_elem == 0 || last_predictions.n_elem != actual.n_elem)
+        throw ModelException("Setul de test pentru LinearRegression este invalid.");
+
     last_mse = arma::mean(arma::square(last_predictions - actual));
     last_r2 = compute_r2(actual, last_predictions);
 

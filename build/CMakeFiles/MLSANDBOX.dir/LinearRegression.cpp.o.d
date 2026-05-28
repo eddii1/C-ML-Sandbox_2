@@ -3115,4 +3115,5 @@ CMakeFiles/MLSANDBOX.dir/LinearRegression.cpp.o: \
   /opt/homebrew/include/mlpack/methods/sparse_coding/sparse_coding.hpp \
   /opt/homebrew/include/mlpack/methods/sparse_coding/sparse_coding_impl.hpp \
   /opt/homebrew/include/mlpack/methods/svdplusplus.hpp \
-  /opt/homebrew/include/mlpack/namespace_compat.hpp
+  /opt/homebrew/include/mlpack/namespace_compat.hpp \
+  /Users/eddii1/CLionProjects/MLSANDBOX/AppExceptions.h

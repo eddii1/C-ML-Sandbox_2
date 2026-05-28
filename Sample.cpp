@@ -3,6 +3,7 @@
 //
 
 #include "Sample.h"
+#include "AppExceptions.h"
 #include <cmath>
 #include <iostream>
 #include <cstdlib>
@@ -91,7 +92,7 @@ arma::mat Sample::predictors_as_mat() const {
 
     for (std::size_t sample_idx = 0; sample_idx < sample_count(); ++sample_idx) {
         if (m[sample_idx].size() != rows) {
-            throw std::runtime_error("Inconsistent feature count inside Sample.");
+            throw DatasetException("Inconsistent feature count inside Sample.");
         }
 
         for (std::size_t feature_idx = 0; feature_idx < rows; ++feature_idx)

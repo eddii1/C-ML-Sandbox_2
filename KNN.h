@@ -6,6 +6,7 @@
 #define MLSANDBOX_KNN_H
 #include "Model.h"
 #include <armadillo>
+#include <memory>
 
 class KNN : public Model {
 private:
@@ -21,6 +22,7 @@ private:
 public:
   explicit KNN(std::size_t k = 3);
   ~KNN() = default;
+  std::shared_ptr<Model> clone() const override;
 
   void set_k(std::size_t value);
   std::size_t get_k() const;

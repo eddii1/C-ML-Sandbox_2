@@ -5,6 +5,7 @@
 #ifndef MLSANDBOX_LINEARREGRESSION_H
 #define MLSANDBOX_LINEARREGRESSION_H
 #include "Model.h"
+#include <memory>
 #include <mlpack.hpp>
 
 class LinearRegression : public Model {
@@ -23,6 +24,7 @@ private:
 public:
   LinearRegression();
   ~LinearRegression() = default;
+  std::shared_ptr<Model> clone() const override;
 
   const arma::rowvec &get_last_predictions() const;
   double get_last_mse() const;

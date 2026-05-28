@@ -5,10 +5,12 @@
 #ifndef MLSANDBOX_MODEL_H
 #define MLSANDBOX_MODEL_H
 #include "Dataset.h"
+#include <memory>
 
 class Model {
 public:
   virtual ~Model() = default;
+  virtual std::shared_ptr<Model> clone() const = 0;
 
   void train(const Dataset &dataset);
   void predict(const Dataset &dataset);

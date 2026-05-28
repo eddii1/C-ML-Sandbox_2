@@ -3,16 +3,26 @@
 //
 
 #include "KNN.h"
+#include "AppExceptions.h"
 #include <algorithm>
 #include <iomanip>
 #include <iostream>
 #include <map>
 #include <mlpack.hpp>
 
-KNN::KNN(std::size_t k) : k(k), trained(false), last_accuracy(0.0) {}
+KNN::KNN(std::size_t k) : k(k), trained(false), last_accuracy(0.0) {
+    if (k == 0)
+        throw ModelException("KNN needs k greater than 0.");
+}
+
+std::shared_ptr<Model> KNN::clone() const {
+    return std::make_shared<KNN>(*this);
+}
 
 void KNN::set_k(std::size_t value) {
-    k = std::max<std::size_t>(1, value);
+    if (value == 0)
+        throw ModelException("KNN needs k greater than 0.");
+    k = value;
 }
 
 std::size_t KNN::get_k() const {
@@ -69,9 +79,8 @@ arma::Row<size_t> KNN::predict_labels(const Sample &sample) const {
 
 void KNN::train_impl(const Sample &sample) {
     if (!sample.check()) {
-        std::cout << "Train sample-ul pentru KNN este gol.\n";
         trained = false;
-        return;
+        throw ModelException("Train sample-ul pentru KNN este gol.");
     }
 
     train_features = sample.predictors_as_mat();
@@ -84,8 +93,7 @@ void KNN::train_impl(const Sample &sample) {
 
 void KNN::predict_impl(const Sample &sample) {
     if (!trained) {
-        std::cout << "KNN nu este antrenat.\n";
-        return;
+        throw ModelException("KNN nu este antrenat.");
     }
 
     last_predictions = predict_labels(sample);
@@ -103,16 +111,14 @@ void KNN::predict_impl(const Sample &sample) {
 
 void KNN::evaluate_impl(const Sample &sample) {
     if (!trained) {
-        std::cout << "KNN nu este antrenat.\n";
-        return;
+        throw ModelException("KNN nu este antrenat.");
     }
 
     const arma::Row<size_t> actual = sample.responses_as_labels();
     last_predictions = predict_labels(sample);
 
     if (actual.n_elem == 0 || last_predictions.n_elem != actual.n_elem) {
-        std::cout << "Setul de test pentru KNN este invalid.\n";
-        return;
+        throw ModelException("Setul de test pentru KNN este invalid.");
     }
 
     const arma::uword correct = arma::accu(last_predictions == actual);

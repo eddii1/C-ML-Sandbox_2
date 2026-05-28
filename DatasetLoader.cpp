@@ -3,6 +3,7 @@
 //
 
 #include "DatasetLoader.h"
+#include "AppExceptions.h"
 #include <fstream>
 #include <sstream>
 
@@ -18,13 +19,15 @@ Sample DatasetLoader::parseCSV(const std::string& nume_fisier) {
     Sample sample;
     std::ifstream fin(nume_fisier);
     if (!fin.is_open())
-        return sample;
+        throw DatasetException("Nu pot deschide fisierul " + nume_fisier);
 
     std::vector<float> values;
     std::vector<std::vector<float>> matrix;
     std::string line;
 
+    int line_number = 0;
     while (std::getline(fin, line)) {
+        ++line_number;
         for (char& ch : line)
             if (ch == ',')
                 ch = ' ';
@@ -32,7 +35,7 @@ Sample DatasetLoader::parseCSV(const std::string& nume_fisier) {
         std::istringstream iss(line);
         float value;
         if (!(iss >> value))
-            continue;
+            throw DatasetException("Linie invalida in " + nume_fisier + ": " + std::to_string(line_number));
 
         values.push_back(value);
 
@@ -43,6 +46,9 @@ Sample DatasetLoader::parseCSV(const std::string& nume_fisier) {
 
         matrix.push_back(row);
     }
+
+    if (values.empty())
+        throw DatasetException("Fisierul nu contine sample-uri: " + nume_fisier);
 
     sample.vector_set(values);
     sample.matrix_set(matrix);

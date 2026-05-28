@@ -32,6 +32,12 @@ set(MLSANDBOX_CORE_SOURCES
         LinearRegression.h
         KNN.cpp
         KNN.h
+        AppExceptions.h
+        History.h
+        ModelFactory.cpp
+        ModelFactory.h
+        Experiment.cpp
+        Experiment.h
 )
 
 add_executable(MLSANDBOX main.cpp

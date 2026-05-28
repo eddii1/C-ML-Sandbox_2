@@ -184,6 +184,34 @@ CMakeFiles/linear_regression_demo.dir/KNN.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linear_regression_demo.dir/KNN.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/KNN.cpp -o CMakeFiles/linear_regression_demo.dir/KNN.cpp.s
 
+CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o: CMakeFiles/linear_regression_demo.dir/flags.make
+CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/ModelFactory.cpp
+CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o: CMakeFiles/linear_regression_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o -MF CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o.d -o CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/ModelFactory.cpp
+
+CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/ModelFactory.cpp > CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.i
+
+CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/ModelFactory.cpp -o CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.s
+
+CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o: CMakeFiles/linear_regression_demo.dir/flags.make
+CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o: /Users/eddii1/CLionProjects/MLSANDBOX/Experiment.cpp
+CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o: CMakeFiles/linear_regression_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o -MF CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o.d -o CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o -c /Users/eddii1/CLionProjects/MLSANDBOX/Experiment.cpp
+
+CMakeFiles/linear_regression_demo.dir/Experiment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linear_regression_demo.dir/Experiment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eddii1/CLionProjects/MLSANDBOX/Experiment.cpp > CMakeFiles/linear_regression_demo.dir/Experiment.cpp.i
+
+CMakeFiles/linear_regression_demo.dir/Experiment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linear_regression_demo.dir/Experiment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eddii1/CLionProjects/MLSANDBOX/Experiment.cpp -o CMakeFiles/linear_regression_demo.dir/Experiment.cpp.s
+
 # Object files for target linear_regression_demo
 linear_regression_demo_OBJECTS = \
 "CMakeFiles/linear_regression_demo.dir/examples/linear_regression_demo.cpp.o" \
@@ -193,7 +221,9 @@ linear_regression_demo_OBJECTS = \
 "CMakeFiles/linear_regression_demo.dir/DatasetLoader.cpp.o" \
 "CMakeFiles/linear_regression_demo.dir/Model.cpp.o" \
 "CMakeFiles/linear_regression_demo.dir/LinearRegression.cpp.o" \
-"CMakeFiles/linear_regression_demo.dir/KNN.cpp.o"
+"CMakeFiles/linear_regression_demo.dir/KNN.cpp.o" \
+"CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o" \
+"CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o"
 
 # External object files for target linear_regression_demo
 linear_regression_demo_EXTERNAL_OBJECTS =
@@ -206,10 +236,12 @@ linear_regression_demo: CMakeFiles/linear_regression_demo.dir/DatasetLoader.cpp.
 linear_regression_demo: CMakeFiles/linear_regression_demo.dir/Model.cpp.o
 linear_regression_demo: CMakeFiles/linear_regression_demo.dir/LinearRegression.cpp.o
 linear_regression_demo: CMakeFiles/linear_regression_demo.dir/KNN.cpp.o
+linear_regression_demo: CMakeFiles/linear_regression_demo.dir/ModelFactory.cpp.o
+linear_regression_demo: CMakeFiles/linear_regression_demo.dir/Experiment.cpp.o
 linear_regression_demo: CMakeFiles/linear_regression_demo.dir/build.make
 linear_regression_demo: /opt/homebrew/lib/libarmadillo.dylib
 linear_regression_demo: CMakeFiles/linear_regression_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable linear_regression_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eddii1/CLionProjects/MLSANDBOX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable linear_regression_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linear_regression_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
